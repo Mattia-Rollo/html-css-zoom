@@ -9,50 +9,73 @@
     border: 1px solid black;
 
 }
+
 /* macro aree */
 html {
     font-size: 20px;
 }
 header {
     background-color: aquamarine;
-    height: 50px;
+    padding: 10px 0;
+    /* height: 50px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 main {
     background-color: coral;
     height: calc(100vh - 100px);
-    position: relative;
+    padding: 50px;
+    overflow-y: scroll;
 }
 footer {
     background-color: darkslategray;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 /* Proprietà flex principale */
 
 .flex {
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
 }
 
 .container {
     background-color: darkturquoise;
-    width: 90%;
-    height: 90%;
-    position: absolute;
+    /* width: 90%;
+    height: 90%; */
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     /* cambiate proprietà flex  */
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
+    align-content: flex-start;
 
 }
 .views {
     padding: 5px;
     background-color: white;
     border-radius: 10px;
+    
+    
 }
 .item {
     background-color: brown;
+    width: calc((100% - (10px * 7 ))/ 7);
+    min-width: 200px;
+    margin: 5px;
+}
+.item img{
+    width: 100%;
 }
