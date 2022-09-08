@@ -1,5 +1,58 @@
+/* utility */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: boder-box;
+}
+.debug {
+    border: 1px solid black;
+
+}
+/* macro aree */
+html {
+    font-size: 20px;
+}
+header {
+    background-color: aquamarine;
+    height: 50px;
+}
+main {
+    background-color: coral;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+footer {
+    background-color: darkslategray;
+    height: 50px;
+}
+
+/* Proprietà flex principale */
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container {
+    background-color: darkturquoise;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* cambiate proprietà flex  */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.views {
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+.item {
+    background-color: brown;
 }
