@@ -16,6 +16,7 @@
 }
 
 /* macro aree */
+
 html {
 color: var(--white);
 }
@@ -34,10 +35,10 @@ main {
     background-color: var(--black);
     height: calc(100vh - 100px);
     padding: 50px 0;
-    overflow-y: scroll;
+    overflow-y: auto; /* tolto scroll perchè mettere la barra di scorrimento anche se il contenuto non è overflow*/
     position: relative;
     margin: 50px 0;
-    padding: 0 10px;
+    padding: 0 120px;
 }
 footer {
     background-color: var(--grey);
@@ -85,8 +86,8 @@ footer {
     
 }
 .item {
-    background-color: brown;
-    width: calc((100% - 70px) / 7);
+    /* background-color: brown; */
+    width: calc((100% - 36px) / 6);
     min-width: 180px;
     margin: 2px;
 }
@@ -100,7 +101,7 @@ footer div.flex {
     height: 100%;
     padding: 0 20px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 14px;
     /* align-items: stretch;*/
     /* align-content: center;  */
 }
@@ -116,4 +117,19 @@ footer div.flex {
 .right a {
     text-decoration: none;
     color: red;
+    font-size: 24px;
+}
+.left {
+    justify-items: center;
+}
+footer div div div {
+    text-align: center;
+    margin: 0 3px;
+}
+.center {
+    justify-content: space-between;
+}
+i {
+    font-size: 24px;
+    margin: 0 6px;;
 }
